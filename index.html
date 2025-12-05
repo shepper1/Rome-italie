@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rome Éternelle : Sur les Traces de l'Empire </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        template: {
+                            sable: '#F3E5AB',
+                            ocre: '#C66B3D',
+                            roche: '#2D2A26',
+                            ciel: '#4A6C6F',
+                            bg: '#FAFAF9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #C66B3D;
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">Rome Éternelle : Sur les Traces de l'Empire</a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée et Premiers Pas dans l'Antiquité</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Plongée au Cœur de l'Empire Romain</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Splendeurs du Vatican et Mystères Angéliques</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Fontaines, Places et Dolce Vita</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Matin romain et Départ</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[85vh] flex items-center justify-center overflow-hidden pt-12 md:pt-0">
+        
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+        <video autoplay muted loop playsinline 
+               poster="https://images.unsplash.com/photo-1579606946838-6db34433f3c0?q=80&w=2070"
+               class="absolute inset-0 w-full h-full object-cover">
+            <source src="https://videos.pexels.com/video-files/4456988/4456988-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.3em] mb-4 uppercase text-sm font-semibold">Feuille de Route</p>
+            <h1 class="font-Playfair italic text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">Rome italie</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-light max-w-2xl mx-auto leading-relaxed">Rome Éternelle : Sur les Traces de l'Empire</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🗓️ 5 jours uniquement</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">💰 1250€ / pers</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🛬 1h45 depuis Paris</span>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-20 relative">
+        
+        <div class="text-center mb-16">
+            <span class="text-template-ocre font-bold tracking-widest text-xs uppercase">Le Roadtrip</span>
+            <h2 class="font-serif text-4xl mt-2 text-template-roche">Votre Programme</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée et Premiers Pas dans l'Antiquité</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après votre arrivée à Rome, l'installation à votre hôtel vous permettra de vous rafraîchir.
+En fin de journée, une balade légère vous plongera directement dans l'atmosphère
+de la Rome antique, avec les majestueux vestiges du Colisée et du Forum Romain
+qui se dévoilent sous la lumière déclinante, offrant une première rencontre inoubliable.
+Le quartier de Monti, plein de charme, sera parfait pour un premier dîner.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🛬 <strong>Arrivée à Rome et transfert</strong>: Atterrissage à l'aéroport de Fiumicino (FCO), puis transfert vers votre hébergement au cœur de Rome. Profitez du trajet pour admirer les paysages urbains qui défilent.</li>
+                            
+                                <li>🛏️ <strong>Installation et découverte du quartier Monti</strong>: Après vous être installés, explorez le charmant quartier de Monti, réputé pour ses boutiques d'artisans et ses trattorias authentiques. C'est l'endroit idéal pour une première balade et un dîner typique.</li>
+                            
+                                <li>🚶‍♂️ <strong>Balade autour du Colisée et Forum Romain (extérieur)</strong>: Une promenade en fin d'après-midi autour de ces monuments emblématiques permet d'apprécier leur grandeur sans la foule et de se familiariser avec les lieux. La vue de nuit est particulièrement magique.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Rome-italie/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Transfert aéroport</p>
+                                <p class="text-gray-700">Le Leonardo Express relie l'aéroport FCO à la gare Termini en 32 minutes, c'est le moyen le plus rapide.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♀️ Conseil</p>
+                                <p class="text-gray-700">Prévoyez des chaussures confortables, Rome se découvre beaucoup à pied.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Plongée au Cœur de l'Empire Romain</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée est entièrement dédiée à l'exploration approfondie des sites antiques majeurs de Rome.
+Du Colisée, amphithéâtre iconique, aux vastes ruines du Forum Romain, chaque pierre
+raconte une histoire millénaire de gladiateurs, d'empereurs et de vie quotidienne.
+Le Mont Palatin offre des vues imprenables, complétant cette immersion historique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🏟️ <strong>Visite du Colisée et du Forum Romain</strong>: Explorez l'amphithéâtre Flavien, symbole de la Rome antique, puis déambulez parmi les ruines du Forum, cœur politique, religieux et commercial de l'Empire. Prévoyez au moins 3 heures pour ces deux sites.</li>
+                            
+                                <li>🏛️ <strong>Mont Palatin et Musées Capitolins</strong>: Montez sur le Mont Palatin pour des vues imprenables sur le Forum et le Cirque Maxime, avant de découvrir les trésors artistiques et archéologiques des Musées Capitolins, situés sur la colline du Capitole.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Rome-italie/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎟️ Billets combinés</p>
+                                <p class="text-gray-700">Achetez un billet combiné Colisée/Forum/Palatin en ligne à l'avance pour éviter les longues files d'attente.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Protection solaire</p>
+                                <p class="text-gray-700">Les sites antiques sont très exposés au soleil, pensez à un chapeau et de la crème solaire.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Splendeurs du Vatican et Mystères Angéliques</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une journée sous le signe de la spiritualité, de l'art et de l'histoire, entre la Cité du Vatican
+et ses trésors inestimables. De la Chapelle Sixtine, chef-d'œuvre de Michel-Ange, à la majestueuse
+Basilique Saint-Pierre, laissez-vous émerveiller par la grandeur de la chrétienté.
+Le Château Saint-Ange, ancien mausolée, complète cette exploration riche en découvertes.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🇻🇦 <strong>Musées du Vatican et Chapelle Sixtine</strong>: Plongez dans l'une des plus grandes collections d'art au monde, culminant avec la Chapelle Sixtine et les fresques magistrales de Michel-Ange. La visite dure généralement 3 à 4 heures.</li>
+                            
+                                <li>⛪ <strong>Basilique Saint-Pierre et Place Saint-Pierre</strong>: Admirez la splendeur de la plus grande église du monde, puis imprégnez-vous de l'atmosphère unique de la place dessinée par Le Bernin. L'entrée à la basilique est gratuite, mais l'attente peut être longue.</li>
+                            
+                                <li>🏰 <strong>Château Saint-Ange</strong>: Ancienne forteresse et mausolée impérial, ce château offre une histoire fascinante et des vues panoramiques sur le Tibre et la ville depuis sa terrasse. Il est facilement accessible à pied depuis le Vatican.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Rome-italie/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👗 Tenue vestimentaire</p>
+                                <p class="text-gray-700">Pour le Vatican, épaules et genoux doivent être couverts. Prévoyez un foulard si nécessaire.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏱️ Réservation</p>
+                                <p class="text-gray-700">Réservez vos billets pour les Musées du Vatican bien à l'avance pour garantir votre entrée et éviter les files.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Fontaines, Places et Dolce Vita</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Rome se révèle aussi à travers ses places baroques, ses fontaines grandioses et ses ruelles animées.
+Cette journée vous invite à flâner, à jeter une pièce dans la légendaire Fontaine de Trevi
+et à savourer la douceur de vivre romaine. Entre architecture majestueuse et ambiance vibrante,
+c'est une immersion totale dans la 'Dolce Vita' qui vous attend.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🏛️ <strong>Panthéon et Piazza Navona</strong>: Émerveillez-vous devant l'architecture du Panthéon, ancien temple romain remarquablement conservé, puis détendez-vous sur la somptueuse Piazza Navona, ornée de la Fontaine des Quatre Fleuves du Bernin.</li>
+                            
+                                <li>⛲ <strong>Fontaine de Trevi et Escaliers de la Place d'Espagne</strong>: Jetez une pièce dans la légendaire Fontaine de Trevi pour vous assurer de revenir à Rome, avant de monter les célèbres marches de la Place d'Espagne, un lieu de rencontre emblématique.</li>
+                            
+                                <li>🛍️ <strong>Shopping et Gelato près de la Via del Corso</strong>: Profitez de l'après-midi pour explorer les boutiques de la Via del Corso et ses environs, et offrez-vous une authentique glace italienne (gelato) dans l'une des nombreuses gelaterias.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Rome-italie/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Meilleur moment</p>
+                                <p class="text-gray-700">Visitez la Fontaine de Trevi tôt le matin ou tard le soir pour éviter la foule et prendre de meilleures photos.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♂️ Conseil</p>
+                                <p class="text-gray-700">Ces sites sont très proches les uns des autres, ce qui permet de tout faire à pied sans difficulté.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Matin romain et Départ</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Avant de quitter la Ville Éternelle, profitez d'une dernière matinée pour une balade relaxante
+ou une visite coup de cœur. Un dernier café italien, un dernier regard sur les toits de Rome,
+et il sera temps de dire 'Arrivederci'. Ces dernières heures sont l'occasion
+de graver les souvenirs de votre séjour dans votre mémoire, avant de rejoindre l'aéroport.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🌳 <strong>Balade dans les jardins de la Villa Borghese</strong>: Profitez de la tranquillité de ce grand parc urbain, idéal pour une promenade matinale, une location de vélo ou une dernière bouffée d'air frais romain. Le parc offre de belles vues sur la ville.</li>
+                            
+                                <li>☕ <strong>Dernier café italien et souvenirs</strong>: Savourez un authentique cappuccino ou un espresso dans un café typique, puis achetez quelques souvenirs de dernière minute dans les petites boutiques locales. C'est le moment de se faire plaisir une dernière fois.</li>
+                            
+                                <li>✈️ <strong>Transfert vers l'aéroport et départ</strong>: Il est temps de rejoindre l'aéroport FCO pour votre vol retour vers Lyon, la tête remplie de souvenirs impérissables de la Ville Éternelle. Prévoyez suffisamment de temps pour le trajet et les formalités.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Rome-italie/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Check-out</p>
+                                <p class="text-gray-700">Vérifiez l'heure de check-out de votre hôtel et demandez un late check-out si votre vol est tardif.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧳 Bagages</p>
+                                <p class="text-gray-700">De nombreuses gares ou services proposent des consignes à bagages pour profiter de votre dernière matinée.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <footer id="pratique" class="bg-white border-t border-gray-200 pt-16 pb-10 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 mb-12">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget vol: </strong>200€/pers (Vol A/R Lyon-Rome, compagnie low-cost ou régulière hors saison)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget transports: </strong>30€/pers (Pass 72h ou tickets à l'unité pour bus/métro/tram)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget repas: </strong>375€/pers (5 jours, restaurants abordables, quelques repas sur le pouce)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget logement: </strong>500€/pers (4 nuits en hôtel 3 étoiles ou B&B bien situé)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget activités: </strong>90€/pers (Entrées Colisée/Forum, Musées Vatican, Château Saint-Ange)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed">Les périodes idéales pour ce séjour sont les mois de avril, mai, septembre et octobre.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>🧳</span> À savoir
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-3">
+
+                        <li><strong>🔌 :</strong> Les prises électriques sont de type F (deux broches rondes), adaptateur non nécessaire si vous utilisez des prises européennes.</li>
+                    
+                        <li><strong>💧 :</strong> L'eau du robinet est potable à Rome et de nombreuses fontaines publiques (nasoni) offrent de l'eau fraîche gratuitement.</li>
+                    
+                        <li><strong>💸 :</strong> Les pourboires ne sont pas obligatoires mais appréciés pour un bon service (5-10% au restaurant).</li>
+                    
+                        <li><strong>⚠️ :</strong> Attention aux pickpockets dans les zones touristiques très fréquentées, notamment les transports en commun. Restez vigilant.</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2"><span>🔗</span> Liens Utiles</h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://shepper1.github.io/Rome italie/map.html" target="_blank" class="hover:underline flex items-center gap-2"><strong>🗺️ Carte</strong></a></li>
+                    
+                        <li><a href="https://www.turismoroma.it/it" target="_blank" class="hover:underline flex items-center gap-2"><strong>📘 Tourisme Rome</strong></a></li>
+                    
+                        <li><a href="https://www.atac.roma.it/" target="_blank" class="hover:underline flex items-center gap-2"><strong>🚆 ATAC Rome (Transports)</strong></a></li>
+                    
+                        <li><a href="https://www.coopculture.it/en/" target="_blank" class="hover:underline flex items-center gap-2"><strong>🎟️ CoopCulture (Billets Colisée)</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="text-center border-t border-gray-100 pt-8">
+            <p class="font-serif text-2xl text-template-roche mb-2">Rome italie</p>
+            <p class="text-xs text-gray-400">© 2025 - Roadmap</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Gestion de l'affichage du menu au scroll
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // 2. Détection de l'étape active
+        const observerOptions = {
+            root: null,
+            rootMargin: '-40% 0px -60% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+
+                    document.querySelectorAll('.nav-item-desktop').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (activeId.includes('jour') && linkHref === 'jour-1') {
+                            link.classList.add('text-template-ocre');
+                        } else if (activeId === 'pratique' && linkHref === 'pratique') {
+                            link.classList.add('text-template-ocre');
+                        } else {
+                            link.classList.remove('text-template-ocre');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('div[id^="jour-"], footer#pratique').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
