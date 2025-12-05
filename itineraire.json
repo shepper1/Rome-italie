@@ -1,0 +1,207 @@
+{
+  "pays": "Italie",
+  "drapeau": "🇮🇹",
+  "symbole": "🍕",
+  "titre": "Rome Éternelle : Sur les Traces de l'Empire",
+  "budget_total": "1250€",
+  "duree": "5 jours uniquement",
+  "temps_vol": "1h45"
+  ,
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée et Premiers Pas dans l'Antiquité",
+      "legende": "Après votre arrivée à Rome, l'installation à votre hôtel vous permettra de vous rafraîchir.\nEn fin de journée, une balade légère vous plongera directement dans l'atmosphère\nde la Rome antique, avec les majestueux vestiges du Colisée et du Forum Romain\nqui se dévoilent sous la lumière déclinante, offrant une première rencontre inoubliable.\nLe quartier de Monti, plein de charme, sera parfait pour un premier dîner.",
+      "lieu": "Rome",
+      "activites": [
+        "🛬 <strong>Arrivée à Rome et transfert</strong>: Atterrissage à l'aéroport de Fiumicino (FCO), puis transfert vers votre hébergement au cœur de Rome. Profitez du trajet pour admirer les paysages urbains qui défilent.",
+        "🛏️ <strong>Installation et découverte du quartier Monti</strong>: Après vous être installés, explorez le charmant quartier de Monti, réputé pour ses boutiques d'artisans et ses trattorias authentiques. C'est l'endroit idéal pour une première balade et un dîner typique.",
+        "🚶‍♂️ <strong>Balade autour du Colisée et Forum Romain (extérieur)</strong>: Une promenade en fin d'après-midi autour de ces monuments emblématiques permet d'apprécier leur grandeur sans la foule et de se familiariser avec les lieux. La vue de nuit est particulièrement magique."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Transfert aéroport",
+          "texte": "Le Leonardo Express relie l'aéroport FCO à la gare Termini en 32 minutes, c'est le moyen le plus rapide."
+        },
+        {
+          "symbole": "🚶‍♀️",
+          "titre": "Conseil",
+          "texte": "Prévoyez des chaussures confortables, Rome se découvre beaucoup à pied."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏛️",
+      "titre": "Plongée au Cœur de l'Empire Romain",
+      "legende": "Cette journée est entièrement dédiée à l'exploration approfondie des sites antiques majeurs de Rome.\nDu Colisée, amphithéâtre iconique, aux vastes ruines du Forum Romain, chaque pierre\nraconte une histoire millénaire de gladiateurs, d'empereurs et de vie quotidienne.\nLe Mont Palatin offre des vues imprenables, complétant cette immersion historique.",
+      "lieu": "Rome",
+      "activites": [
+        "🏟️ <strong>Visite du Colisée et du Forum Romain</strong>: Explorez l'amphithéâtre Flavien, symbole de la Rome antique, puis déambulez parmi les ruines du Forum, cœur politique, religieux et commercial de l'Empire. Prévoyez au moins 3 heures pour ces deux sites.",
+        "🏛️ <strong>Mont Palatin et Musées Capitolins</strong>: Montez sur le Mont Palatin pour des vues imprenables sur le Forum et le Cirque Maxime, avant de découvrir les trésors artistiques et archéologiques des Musées Capitolins, situés sur la colline du Capitole."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "🎟️",
+          "titre": "Billets combinés",
+          "texte": "Achetez un billet combiné Colisée/Forum/Palatin en ligne à l'avance pour éviter les longues files d'attente."
+        },
+        {
+          "symbole": "☀️",
+          "titre": "Protection solaire",
+          "texte": "Les sites antiques sont très exposés au soleil, pensez à un chapeau et de la crème solaire."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🇻🇦",
+      "titre": "Splendeurs du Vatican et Mystères Angéliques",
+      "legende": "Une journée sous le signe de la spiritualité, de l'art et de l'histoire, entre la Cité du Vatican\net ses trésors inestimables. De la Chapelle Sixtine, chef-d'œuvre de Michel-Ange, à la majestueuse\nBasilique Saint-Pierre, laissez-vous émerveiller par la grandeur de la chrétienté.\nLe Château Saint-Ange, ancien mausolée, complète cette exploration riche en découvertes.",
+      "lieu": "Rome",
+      "activites": [
+        "🇻🇦 <strong>Musées du Vatican et Chapelle Sixtine</strong>: Plongez dans l'une des plus grandes collections d'art au monde, culminant avec la Chapelle Sixtine et les fresques magistrales de Michel-Ange. La visite dure généralement 3 à 4 heures.",
+        "⛪ <strong>Basilique Saint-Pierre et Place Saint-Pierre</strong>: Admirez la splendeur de la plus grande église du monde, puis imprégnez-vous de l'atmosphère unique de la place dessinée par Le Bernin. L'entrée à la basilique est gratuite, mais l'attente peut être longue.",
+        "🏰 <strong>Château Saint-Ange</strong>: Ancienne forteresse et mausolée impérial, ce château offre une histoire fascinante et des vues panoramiques sur le Tibre et la ville depuis sa terrasse. Il est facilement accessible à pied depuis le Vatican."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "👗",
+          "titre": "Tenue vestimentaire",
+          "texte": "Pour le Vatican, épaules et genoux doivent être couverts. Prévoyez un foulard si nécessaire."
+        },
+        {
+          "symbole": "⏱️",
+          "titre": "Réservation",
+          "texte": "Réservez vos billets pour les Musées du Vatican bien à l'avance pour garantir votre entrée et éviter les files."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "⛲",
+      "titre": "Fontaines, Places et Dolce Vita",
+      "legende": "Rome se révèle aussi à travers ses places baroques, ses fontaines grandioses et ses ruelles animées.\nCette journée vous invite à flâner, à jeter une pièce dans la légendaire Fontaine de Trevi\net à savourer la douceur de vivre romaine. Entre architecture majestueuse et ambiance vibrante,\nc'est une immersion totale dans la 'Dolce Vita' qui vous attend.",
+      "lieu": "Rome",
+      "activites": [
+        "🏛️ <strong>Panthéon et Piazza Navona</strong>: Émerveillez-vous devant l'architecture du Panthéon, ancien temple romain remarquablement conservé, puis détendez-vous sur la somptueuse Piazza Navona, ornée de la Fontaine des Quatre Fleuves du Bernin.",
+        "⛲ <strong>Fontaine de Trevi et Escaliers de la Place d'Espagne</strong>: Jetez une pièce dans la légendaire Fontaine de Trevi pour vous assurer de revenir à Rome, avant de monter les célèbres marches de la Place d'Espagne, un lieu de rencontre emblématique.",
+        "🛍️ <strong>Shopping et Gelato près de la Via del Corso</strong>: Profitez de l'après-midi pour explorer les boutiques de la Via del Corso et ses environs, et offrez-vous une authentique glace italienne (gelato) dans l'une des nombreuses gelaterias."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Meilleur moment",
+          "texte": "Visitez la Fontaine de Trevi tôt le matin ou tard le soir pour éviter la foule et prendre de meilleures photos."
+        },
+        {
+          "symbole": "🚶‍♂️",
+          "titre": "Conseil",
+          "texte": "Ces sites sont très proches les uns des autres, ce qui permet de tout faire à pied sans difficulté."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "✈️",
+      "titre": "Matin romain et Départ",
+      "legende": "Avant de quitter la Ville Éternelle, profitez d'une dernière matinée pour une balade relaxante\nou une visite coup de cœur. Un dernier café italien, un dernier regard sur les toits de Rome,\net il sera temps de dire 'Arrivederci'. Ces dernières heures sont l'occasion\nde graver les souvenirs de votre séjour dans votre mémoire, avant de rejoindre l'aéroport.",
+      "lieu": "Rome",
+      "activites": [
+        "🌳 <strong>Balade dans les jardins de la Villa Borghese</strong>: Profitez de la tranquillité de ce grand parc urbain, idéal pour une promenade matinale, une location de vélo ou une dernière bouffée d'air frais romain. Le parc offre de belles vues sur la ville.",
+        "☕ <strong>Dernier café italien et souvenirs</strong>: Savourez un authentique cappuccino ou un espresso dans un café typique, puis achetez quelques souvenirs de dernière minute dans les petites boutiques locales. C'est le moment de se faire plaisir une dernière fois.",
+        "✈️ <strong>Transfert vers l'aéroport et départ</strong>: Il est temps de rejoindre l'aéroport FCO pour votre vol retour vers Lyon, la tête remplie de souvenirs impérissables de la Ville Éternelle. Prévoyez suffisamment de temps pour le trajet et les formalités."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Check-out",
+          "texte": "Vérifiez l'heure de check-out de votre hôtel et demandez un late check-out si votre vol est tardif."
+        },
+        {
+          "symbole": "🧳",
+          "titre": "Bagages",
+          "texte": "De nombreuses gares ou services proposent des consignes à bagages pour profiter de votre dernière matinée."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "200€/pers (Vol A/R Lyon-Rome, compagnie low-cost ou régulière hors saison)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "30€/pers (Pass 72h ou tickets à l'unité pour bus/métro/tram)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "375€/pers (5 jours, restaurants abordables, quelques repas sur le pouce)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "500€/pers (4 nuits en hôtel 3 étoiles ou B&B bien situé)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "90€/pers (Entrées Colisée/Forum, Musées Vatican, Château Saint-Ange)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de avril, mai, septembre et octobre.",
+      "symbole": "☀️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Les prises électriques sont de type F (deux broches rondes), adaptateur non nécessaire si vous utilisez des prises européennes.",
+      "symbole": "🔌"
+    },
+    {
+      "titre": "L'eau du robinet est potable à Rome et de nombreuses fontaines publiques (nasoni) offrent de l'eau fraîche gratuitement.",
+      "symbole": "💧"
+    },
+    {
+      "titre": "Les pourboires ne sont pas obligatoires mais appréciés pour un bon service (5-10% au restaurant).",
+      "symbole": "💸"
+    },
+    {
+      "titre": "Attention aux pickpockets dans les zones touristiques très fréquentées, notamment les transports en commun. Restez vigilant.",
+      "symbole": "⚠️"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Infos officielles et inspirations",
+      "titre": "Tourisme Rome",
+      "url": "https://www.turismoroma.it/it",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Horaires et itinéraires des transports en commun",
+      "titre": "ATAC Rome (Transports)",
+      "url": "https://www.atac.roma.it/",
+      "symbole": "🚆"
+    },
+    {
+      "legende": "Billetterie officielle Colisée, Forum Romain, Mont Palatin",
+      "titre": "CoopCulture (Billets Colisée)",
+      "url": "https://www.coopculture.it/en/",
+      "symbole": "🎟️"
+    }
+  ]
+}
